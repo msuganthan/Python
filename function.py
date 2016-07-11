@@ -4,3 +4,6 @@ def hello(name):
 
 def add(x, y):
     return (x + y)
+
+def studentScore(name, score):
+    print(name," scored ", score, " Mark")
