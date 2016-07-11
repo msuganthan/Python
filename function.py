@@ -5,5 +5,5 @@ def hello(name):
 def add(x, y):
     return (x + y)
 
-def studentScore(name, score):
+def studentScore(name="tom", score=0): #*score for multiple scores
     print(name," scored ", score, " Mark")
