@@ -35,3 +35,13 @@ print(range(10))
 
 print("List range")
 print(list(range(10)))
+
+#break, continue statements and else clause
+print('break, continue statements and else clasue')
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, ' equals ', x, '*', n//x)
+            break
+        else:
+            print(n, 'is a prime number')
