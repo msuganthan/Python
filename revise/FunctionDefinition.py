@@ -53,13 +53,38 @@ def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
     print("type", type)
 
 parrot(1000)                                          # 1 positional argument
-parrot(voltage=1000)                                  # 1 keyword argument
-parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
-parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments
-parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments
-parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
+#parrot(voltage=1000)                                  # 1 keyword argument
+#parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
+#parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments
+#parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments
+#parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
 
 def function(a):
     pass
 
 #function(0, a=0)
+
+#When a final formal parameter of the form **name is present, it receives a dictionary
+#May be combined with a formal parameter of the form *name which receives a tuple containing the
+#positional arguments beyond the formal parameter list.
+print('cheeseShop')
+def cheeseShop(kind, *arguments, **keywords):
+    print('Cheese kind', kind)
+    for arg in arguments:
+        print(arg)
+    print("-"*40)
+    keys = sorted(keywords.keys())
+    for kw in keys:
+        print(kw, ":",keywords[kw])
+
+cheeseShop("Limburger", "It's very runny, sir.",
+           "It's really very, VERY runny, sir.",
+           shopkeeper="Michael Palin",
+           client="John Cleese",
+           sketch="Cheese Shop Sketch")
+
+#Arbitrary Argument Lists
+#that a function can be called with an arbitrary number of arguments.
+
+def write_multiple_items(file, separator, *args):
+    file.write(separator.join(args))
