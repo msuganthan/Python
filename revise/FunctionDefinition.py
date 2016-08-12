@@ -19,3 +19,19 @@ def Rfibono(limit):
     return result
 
 Rfibono(200)
+
+#default argument
+print('default argument')
+def askOk(prompt, retries=2, remainder='Please try again!!!'):
+    while True:
+        ok = input(prompt)
+        if ok in ('y', 'ye', 'yes'):
+            return True
+        if ok in ('n', 'no'):
+            return False
+        retries = retries - 1
+        if retries < 0:
+            raise ValueError('invalid user response')
+        print(remainder)
+
+askOk('Do you really want to quit?')
