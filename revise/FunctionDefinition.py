@@ -101,3 +101,7 @@ def make_incrementor(n):
     return lambda x: x + n
 f = make_incrementor(42)
 print(f(0))
+
+
+#Name your classes and functions consistently; the convention is to use CamelCase for classes and lower_case_with_underscores for functions and methods.
+#Always use self as the name for the first method argument 
