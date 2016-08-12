@@ -88,3 +88,16 @@ cheeseShop("Limburger", "It's very runny, sir.",
 
 def write_multiple_items(file, separator, *args):
     file.write(separator.join(args))
+
+#Unpacking Argument Lists
+print('Unpacking argument list')
+list = [3, 6]
+print(range(*list))
+
+
+#lambdas expression
+#Small anonymous functions can be created with the lambda keyword
+def make_incrementor(n):
+    return lambda x: x + n
+f = make_incrementor(42)
+print(f(0))
