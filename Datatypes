@@ -1,1 +1,36 @@
 
+Data types:
+===========
+
+int 
+float
+complex
+bool
+str
+bytes
+bytearray
+range
+list
+tuple
+set
+fronzenset
+dict
+None
+
+Internally everything is an object in Python
+
+1. int:
+========
+The number without integral value.
+a=10
+id(a)
+type(a)
+
+Ways to represent intergral values
+
+  1. Decimal form ==> a=7878
+  2. Binary form  ==> 0B1111, 0b1111
+  3. Octal form   ==> 0o8789, 0O7989
+  4. Hexa Decimal ==> 0x3233, 0x3298
+  
+
