@@ -22,3 +22,13 @@ Limitations:
 Myth:
 =====
 Python is not suitable for large scale application
+
+Flavors of Python:
+==================
+1. CPython
+2. Jython
+3. IronPython
+4. Pypy(performance is too good) ==> inside PVM, JIT compiler is there.
+5. RubyPython
+6. AnacondaPython ==> To handle huge data, we can use this Python
+7. Stackless(Python for concurrency)
