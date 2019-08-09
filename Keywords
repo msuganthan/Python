@@ -1,0 +1,9 @@
+Reserved Words:
+================
+
+1. True, false, None
+2. and, or, not, is
+3. if, else, elif
+4. while, for, break, continue, return, in, yield
+5. try, except, finally, raise, assert
+6. import, from, as, class, del, pass, global, nonlocal, lambda, del, with
