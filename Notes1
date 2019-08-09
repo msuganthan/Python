@@ -32,3 +32,17 @@ Flavors of Python:
 5. RubyPython
 6. AnacondaPython ==> To handle huge data, we can use this Python
 7. Stackless(Python for concurrency)
+
+Rules to define identifiers in Python:
+======================================
+
+1. alphabet symbols(both upper case and lower case)
+   digits(0 to 9)
+   underscore(_)
+2. identifier should not start with digit
+3. identifiers are case-sensitive
+4. keywords are not allowed as identifiers
+5. There is not limit for max length limit for identifiers
+6. _ => private
+7. __ => strongly private
+8. __main__ ==> language specific identific
