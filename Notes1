@@ -1,4 +1,5 @@
 Why Python:
+===========
 
 1. Simple and easy to learn
 2. Freeware and Open source
@@ -11,3 +12,9 @@ Why Python:
 9. Extensible
 10. Embedded
 11. Extensive Library 
+
+
+Limitations:
+============
+1. Performance
+2. Not suitable for mobile application
