@@ -33,4 +33,41 @@ Ways to represent intergral values
   3. Octal form   ==> 0o8789, 0O7989
   4. Hexa Decimal ==> 0x3233, 0x3298
   
+Integer: There is no long type in python3
+========
 
+Convert any base to another base
+
+bin()
+oct()
+hex()
+
+bin(0o777)
+bin(0X1234)
+oct(789)
+oct(0XFACE)
+oct(0B1111)
+hex(0B1111)
+
+Float:(There is no double value)
+======
+f=123.456(valid)
+f=0X123.456(invalid)
+f=0o123.345(invalid)
+f=1.2e3(valid)
+
+String
+=======
+str
+index
+slice
+*
+len(s)
+
+Type-casting
+=============
+int()
+float()
+complex()
+bool()
+str()
