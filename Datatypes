@@ -69,7 +69,7 @@ Type-casting
 int() ==> can't convert complex to int
   int("10.5") ==> can't
   int("10")   ==> can
-float()
+float() ==> can't convert complex to float
 complex()
 bool()
 str()
