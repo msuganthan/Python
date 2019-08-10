@@ -67,11 +67,52 @@ len(s)
 Type-casting
 =============
 int() ==> can't convert complex to int
-  int("10.5") ==> can't
+  int(10.123) ==> 10
+  int(True)   ==> 1
+  int(False)  ==> 0
   int("10")   ==> can
+  int("10.5") ==> can't
+  
 float() ==> can't convert complex to float
+  float(10)    ==> 10.0
+  float(10+5j) ==> Type error
+  float(True)  ==> 1.0
   float("ten") ==> this conversion is not possible
   float("0B1212") ==> Type error
-complex()
+  float("10")     ==> 10.0
+  
+complex():
+-----------
+complex(10) ==> 10+0j
+complex(10.5) ==> 10.5+0j
+complex(True) ==> 1 + 0j
+complex(False) ==> 0 + 0j
+complex("10")  ==> 10 = 0j
+complex("ten") ==> arg is a malformed string
+
+complex(10, 20) ==> 10 + 20j
+complex(True, False) ==> 1 + 0j
+complex(10, 20.5)    ==> 10 + 20.5j
+complex("10", "12")  ==> can't take second arg if the first arg is string
+
+
 bool()
+======
+bool(0) ==> False
+bool(10) ==> True
+bool(-10) ==> True
+
+bool(0.0) ==> False
+bool(0.1) ==> True
+bool(0.01) ==> True
+
+bool(0+0j) ==> False
+bool(10+20j) ==> True
+
+bool('')  ==> False
+bool('sugan') ==> True
+bool(' ') ==> True
+
 str()
+=====
+pass anything you will get the string
