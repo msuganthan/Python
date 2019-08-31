@@ -1,0 +1,26 @@
+All fundamental dataType are immutable in python
+    int, float, bool, str, complex
+
+List is not immutable
+
+x = 10
+y = 10
+
+x is y ==> True
+
+x = 257
+y = 257
+
+x is y ==> False
+
+    Reusing the same object is available only upto 0 to 256
+
+x = 10.0
+y = 10.0
+
+x is y ==> False, For floating point datatype reusing is not available
+
+x = 10+20j
+y = 10+20j
+
+x is y ==> False, For complex object, reusing is not available

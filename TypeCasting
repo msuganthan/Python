@@ -1,0 +1,62 @@
+How to do Type-casting
+=======================
+int()
+======
+
+      ==> int(123.546)  ==> 123
+      ==> int(10+20j)   ==> Type error
+      ==> int(True)     ==> 1
+      ==> int(False)    ==> 0
+      ==> int("10")     ==> 10
+      ==> int("10.5")   ==> Value error
+      ==> int("OB1111") ==> Invalid literal for int() with base 10
+
+float()
+=======
+        ==> float(10)       ==> 10.0
+        ==> float(10+20j)   ==> Type error
+        ==> float(True)     ==> 1.0
+        ==> float(False)    ==> 0.0
+        ==> float("10")     ==> 10.0
+        ==> float("10.5")   ==> 10.5
+        ==> float("Ten")    ==> ValueError
+        ==> float("OB1111") ==> Invalid literal for int() with base 10
+
+complex() ==>
+1. complex(x)    ==> complex(x+0j)
+===================================
+    complex(10)     ==> complex(10+0j)
+    complex(10.5)   ==> complex(10.5+0j)
+    complex(True)   ==> complex(1+0j)
+    complex(False)  ==> complex(0+0j)
+    complex("10")   ==> complex(10+0j)
+    complex("10.5") ==> complex(10.5+0j)
+    complex("ten")  ==> ValueError
+    complex("0B1111") ==> ValueError
+
+2. complex(x,y)  ==> complex(x+yj)
+    complex(10, 20) ==> complex(10+20j)
+    complex(True, False) ==> complex(1+0j)
+    complex(10, 20.5) ==> complex(10 + 20.5j)
+    complex("10", "12") ==> 'complex can't take second arg if first is a String
+
+bool()
+=======
+
+    bool(0) ==> False
+    bool(10) ==> True
+    bool(-10) ==> True
+
+    bool(0.0) ==> False
+    bool(10.5) ==> True
+
+    bool(10+20j) ==> True
+    bool(0+0j)   ==> False
+
+    bool('')    ==> False
+    bool('durga') ==> True
+
+str()
+=====
+
+    No restriction at all, you can pass any datatype to str

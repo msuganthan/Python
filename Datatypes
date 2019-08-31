@@ -64,6 +64,8 @@ slice
 *
 len(s)
 
+char typs is not available.
+
 Type-casting
 =============
 int() ==> can't convert complex to int
